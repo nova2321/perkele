@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Original HTML Page </title>
+  <meta name="description" content="A simple starter HTML page" />
+  <style>
+    :root { --max-width: 800px; --gap: 1rem; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 2rem; line-height: 1.6; background: #f9f9f9; color: #333; }
+    .container { max-width: var(--max-width); margin: 0 auto; gap: var(--gap); }
+    img { max-width: 100px; height: auto; display: block; margin: 0 auto; margin-top: .5rem; }
+    footer { margin-top: 2rem; color: #666; font-size: .9rem; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    label { font-weight: bold; }
+    input[type="text"], input[type="email"] { padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+    input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
+    input[type="submit"]:hover { background-color: #45a049; }
+    .content-box { padding: 20px; margin: 10px 0; background-color: #f0f0f0; border: 1px solid #ccc; margin-bottom: 20px; }
+
+    .transition-button { background-color: lightblue; padding: 10px 20px; border: none; cursor: pointer; transition: background-color 0.3s ease; margin-bottom: 20px; }
+    .transition-button:hover { background-color: lightcoral; }
+
+    .animation-box { width: 50px; height: 50px; background-color: lightgreen; position: relative; animation: move 2s infinite alternate; margin-bottom: 20px; }
+    @keyframes move { from { left: 0; } to { left: 100px; } }
+
+    .pseudo-list li:nth-child(odd) { background-color: lightgray; }
+    .pseudo-list li:nth-child(even) { background-color: white; }
+    .pseudo-list { list-style: none; padding: 0; margin-bottom: 20px; }
+    .pseudo-list li { padding: 10px; border: 1px solid #ccc; }
+
+    .filter-image { display: block; max-width: 200px; margin: 0 auto 20px auto; filter: grayscale(100%); transition: filter 0.3s ease; }
+    .filter-image:hover { filter: grayscale(0%); }
+
+    .quote { position: relative; padding-left: 25px; font-style: italic; border-left: 2px solid #ccc; margin-bottom: 20px; }
+    .quote::before { content: '“'; font-size: 40px; position: absolute; left: 0; top: -10px; color: lightgray; }
+
+    .flex-container { display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px; }
+    .box { background-color: lightblue; padding: 20px; text-align: center; flex: 1; margin: 5px; }
+
+    .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px; margin-bottom: 20px; }
+    .grid-item { background-color: lightgreen; padding: 20px; text-align: center; }
+
+    .responsive-box { padding: 20px; text-align: center; margin-bottom: 20px; }
+    @media (max-width: 600px) { .responsive-box { background-color: lightcoral; } }
+    @media (min-width: 601px) { .responsive-box { background-color: lightseagreen; } }
+
+    header nav ul { list-style: none; display: flex; gap: 15px; padding: 0; margin: 10px 0 20px 0; }
+    header nav ul li a { text-decoration: none; color: #333; font-weight: bold; }
+    section { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section id="about">
+        <h2>Minusta</h2>
+        <p>Olen 19-vuotta vanha.</p>
+      </section>
+
+      <p>Kuva minusta.</p>
+      <figure>
+        <img src="images/Noa_Nunoo.jpg" alt="Noa Nunoo's photo" />
+        <figcaption>Noa Nunoo</figcaption>
+      </figure>
+    </main>
+
+    <footer>
+      <small>&copy; 2025 Noa</small>
+    </footer>
+  </div>
+
+  <ol>
+    <li>Weight lifting</li>
+    <li>Food</li>
+    <li>Video games</li>
+  </ol>
+
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Autot</li>
+    <li>Vaatteet</li>
+    <li>Treidaus</li>
+  </ul>
+
+  <a href="https://www.laurea.fi">Visit Laurea</a>
+
+  <table>
+    <tr>
+      <th>En oikein osannut tehdä tätä kohtaa</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+    </tr>
+  </table>
+
+  <form>
+    <label for="Noa">Name:</label>
+    <input type="text" id="Noa" name="Noa">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="noa.nunoo@gmail.com">
+    <input type="submit" value="Submit">
+  </form>
+
+  <div class="content-box">
+    <h3>Terve</h3>
+    <p>Heissan</p>
+  </div>
+
+  <button class="transition-button">Hiiri päälle</button>
+  <div class="animation-box"></div>
+  <ul class="pseudo-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <img src="https://via.placeholder.com/200" alt="Sample Image" class="filter-image">
+  <blockquote class="quote">Tämä on esimerkki lause.</blockquote>
+
+  <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+
+  <div class="responsive-box">Litistä sivua niin vaihtaa väriä</div>
+
+</body>
+</html>
