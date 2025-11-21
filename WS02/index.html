@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My First HTML Page Mario</title>
+    <meta name="description" content="A simple starter HTML page" />
+    <style>
+        :root { --max-width: 800px; --gap: 1rem; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 2rem; line-height: 1.6; }
+        .container { max-width: var(--max-width); margin: 0 auto; gap: var(--gap); }
+        img { max-width: 100px; height: auto; display: block; margin-top: .5rem; margin: 0 auto; }
+        footer { margin-top: 2rem; color: #666; font-size: .9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Morjensta päivää</h1>
+        </header>
+
+        <main>
+            <p>Kuva minusta.</p>
+
+            <figure>
+                <img src="images/Noa_Nunoo.jpg" alt="Noa Nunoo's photo" />
+                <figcaption>Noa Nunoo</figcaption>
+            </figure>
+        </main>
+
+        <footer>
+            <small>&copy; 2025 Your Name</small>
+        </footer>
+    </div>
+        <ol>
+            <li>Weight lifting</li>
+            <li>Food</li>
+            <li>Video games</li>
+        </ol>
+        
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Autot</li>
+            <li>Vaatteet</li>
+            <li>Treidaus</li>
+        </ul>
+        <a href="https://www.laurea.fi">Visit Laurea</a>
+        <table>
+            <tr>
+                <th>En oikein osannut tehdä tätä kohtaa</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </table>
+        <form>
+            <label for="Noa">Name:</label>
+            <input type="text" id="Noa" name="Noa"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="noa.nunoo@gmail.com"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+</body>
+<div class="content-box">
+  <h3>Terve</h3>
+  <p>Heissan</p>
+</div>
+}
+<style>
+  .content-box {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
